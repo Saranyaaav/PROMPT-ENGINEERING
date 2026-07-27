@@ -416,6 +416,39 @@ graph TD
     A --> E[VAEs<br><i>Data Compression</i>]
 ```
 
+## IV. Advanced Generative AI Architectures
+```text
+graph TD
+    A[Input Tokens] --> B[Embeddings + Positional Encoding]
+    B --> C[Attention Block: Q, K, V Matrices]
+    C --> D[FFN Layer]
+    D --> E[Output Probabilities]
+```
+    
+## V. End-to-End LLM Build Pipeline
+Building a production-grade LLM involves a multi-stage training lifecycle:
+```text
+┌─────────────────────────┐
+│ 1. Data Processing      │ ──► Web scraping, filtering, PII removal, sub-word tokenization
+└───────────┬─────────────┘
+            ▼
+┌─────────────────────────┐
+│ 2. Pre-Training         │ ──► Months of GPU compute; self-supervised next-token prediction
+└───────────┬─────────────┘
+            ▼
+┌─────────────────────────┐
+│ 3. Fine-Tuning (SFT)    │ ──► Instruction-tuning on curated Q&A pairs and tool-use tasks
+└───────────┬─────────────┘
+            ▼
+┌─────────────────────────┐
+│ 4. Alignment (RLHF/DPO) │ ──► Human/automated preference tuning for safety and helpfulness
+└───────────┬─────────────┘
+            ▼
+┌─────────────────────────┐
+│ 5. Deployment & RAG     │ ──► Quantization (INT8/4), KV-caching, and database grounding
+└─────────────────────────┘
+```
+
 # Perplexity:
 # 5. Explain about LLM and how it is build
 

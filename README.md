@@ -213,7 +213,7 @@ As they train against each other in a zero-sum game, the generator becomes adept
 
 # Perplexity:
 # 2. Focusing on Generative AI architectures. (like transformers)
-# Generative AI Architectures & Transformers
+## Generative AI Architectures & Transformers:
 
 Generative AI architectures are the underlying model designs that allow AI to create new content. **Transformers** stand as the foundational architecture behind modern Large Language Models (LLMs) because of their ability to handle context and long-range relationships effectively through **self-attention**—a mechanism that helps the model focus on the most relevant parts of an input sequence while generating output.
 

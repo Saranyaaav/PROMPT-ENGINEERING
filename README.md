@@ -82,28 +82,49 @@ Act as an AI Systems & Evaluation Engineer. Walk through the complete pipeline o
 
 # Perplexity: 
 # 1. Explain the foundational concepts of Generative AI
-Generative AI is a type of artificial intelligence that learns patterns from existing data and then creates new content that resembles that data. It can generate text, images, audio, code, video, and more.
-## Foundational concepts
-•	Learning from data: Generative AI systems are trained on large datasets so they can recognize structure, style, and relationships.
-•	Pattern generation: Instead of only classifying or predicting labels, they produce new outputs based on learned patterns.
-•	Probabilistic modeling: These models estimate what is most likely to come next in a sequence, such as the next word in a sentence or the next pixel in an image.
-•	Input prompt: A user provides a prompt, and the model generates a response based on that instruction.
-•	Training and inference: During training, the model learns from data. During inference, it uses that learning to create new content.
-## How it differs from traditional AI
-Traditional AI often focuses on tasks like classification, detection, or prediction. Generative AI, by contrast, is designed to create new content. For example, a traditional model may label an email as spam, while a generative model may write a new email reply.
-## Main types of generative models
-•	Autoregressive models: Generate output step by step, one token at a time.
-•	Variational autoencoders: Learn compact representations and generate variations of data.
-•	Generative adversarial networks: Use two networks, one to generate and one to evaluate, to improve output quality.
-•	Diffusion models: Start with noise and gradually refine it into a realistic image or other output.
-## Real-world examples
-•	Chatbots that write answers.
-•	Image generators that create artwork from text.
-•	Coding assistants that suggest program code.
-•	Voice systems that synthesize speech.
-•	Video tools that generate scenes from prompts.
-## In one line
-Generative AI is technology that learns from examples and uses that knowledge to create new, human-like content.
+Generative AI is a type of artificial intelligence that learns patterns from existing data and creates new content that resembles that data. It can generate text, images, audio, code, video, and more.
+
+---
+
+## Foundational Concepts
+
+**Learning from data:** Generative AI systems are trained on large datasets so they can recognize structure, style, and relationships.
+**Pattern generation:** Instead of only classifying or predicting labels, they produce new outputs based on learned patterns.
+**Probabilistic modeling:** These models estimate what is most likely to come next in a sequence, such as the next word in a sentence or the next pixel in an image.
+**Input prompt:** A user provides a prompt, and the model generates a response based on that instruction.
+**Training and inference:** During training, the model learns from data. During inference, it uses that learning to create new content.
+
+---
+
+## How it Differs from Traditional AI
+
+Traditional AI often focuses on tasks like classification, detection, or prediction. Generative AI, by contrast, is designed to create new content. 
+
+> **Example:** A traditional model may label an email as spam, while a generative model may write a new email reply.
+
+---
+
+## Main Types of Generative Models
+
+**Autoregressive Models:** Generate output step by step, one token at a time.
+**Variational Autoencoders (VAEs):** Learn compact representations and generate variations of data.
+**Generative Adversarial Networks (GANs):** Use two networks—one to generate and one to evaluate—to improve output quality.
+**Diffusion Models:** Start with noise and gradually refine it into a realistic image or other output.
+
+---
+
+## Real-World Examples
+
+* 💬 **Text:** Chatbots that write detailed answers.
+* 🎨 **Images:** Generators that create artwork from text.
+* 💻 **Code:** Assistants that suggest and autocomplete program code.
+* 🎙️ **Audio:** Voice systems that synthesize realistic speech.
+* 🎥 **Video:** Tools that generate video scenes from prompts.
+
+---
+
+> **TL;DR / In One Line:**  
+> Generative AI is technology that learns from examples and uses that knowledge to create new, human-like content.
 
 # Gemini:
 # 1. Explain the foundational concepts of Generative AI

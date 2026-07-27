@@ -359,4 +359,110 @@ graph TD
         ED1[Seq-to-Seq] --> ED2[Encodes Input, Decodes Output] --> ED3[T5, Whisper]
     end
 ```
+
+
+# 🏗️ Advanced Generative AI Architectures
+
+Generative AI relies on specialized neural network architectures designed to learn, compress, and reconstruct complex data distributions. While the Transformer remains the dominant backbone, modern generative AI spans several major architectural paradigms designed to solve specific challenges—such as scaling context lengths, handling multimodal data, and reducing computational costs.
+
+---
+
+## 1. The Transformer Architecture (The Dominant Engine)
+
+Introduced in 2017, the Transformer replaced sequential recurrence (like RNNs) with **Self-Attention**, allowing the model to weigh the relationship between every pair of tokens in a sequence simultaneously.
+
+```text
+Input Tokens ──> Embeddings + Positional Encoding ──> [Attention Block] ──> [FFN Layer] ──> Output Probabilities
+                                                            │
+                                                     (Q, K, V Matrices)
+```
+
+### Core Components
+* **Query, Key, Value ($Q, K, V$) Matrices:** The input vector is projected into three distinct representations:
+  * **Query ($Q$):** What the current token is searching for.
+  * **Key ($K$):** What information other tokens hold.
+  * **Value ($V$):** The actual content carried by the token.
+* **Attention Math:** The attention weight is computed using the scaled dot-product formula:
+
+$$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
+
+* **Multi-Head Attention:** Splits inputs across multiple "heads," enabling the model to track different relationships concurrently (e.g., one head handles grammar, another tracks subject-verb context).
+* **Rotary Position Embeddings (RoPE):** Modern transformers use RoPE to encode relative distances between tokens by rotating vectors in complex space, allowing better scaling to long context windows.
+
+### Structural Variations
+
+```text
+ ┌──────────────────────┐      ┌──────────────────────┐      ┌──────────────────────────┐
+ │     Decoder-Only     │      │     Encoder-Only     │      │     Encoder-Decoder      │
+ │  (Autoregressive)    │      │  (Bidirectional)     │      │  (Sequence-to-Sequence)  │
+ ├──────────────────────┤      ├──────────────────────┤      ├──────────────────────────┤
+ │ Predicts next token  │      │ Sees full context    │      │ Encodes input, decodes   │
+ │ Causal masking       │      │ Masked language      │      │ conditional output       │
+ │ E.g. GPT, Llama      │      │ E.g. BERT, Embeddings│      │ E.g. T5, Whisper         │
+ └──────────────────────┘      └──────────────────────┘      └──────────────────────────┘
+```
+
+---
+
+## 2. Mixture of Experts (MoE)
+
+As transformers grew to hundreds of billions of parameters, standard "dense" layers became computationally expensive to run for every single token. **Mixture of Experts (MoE)** decouples total parameter size from inference compute cost.
+
+* **Sparse Activation:** Instead of running the full network, a router (gating network) evaluates each token and routes it to only 1–2 specialized sub-networks ("experts") per layer.
+* **Benefit:** A model can hold 100B+ total parameters while only activating ~20B per token, drastically lowering latency and inference costs.
+
+---
+
+## 3. Diffusion Transformers (DiT)
+
+Historically, image and video generation relied on U-Net convolutional backbones paired with diffusion noise-reduction loops. Modern high-fidelity generators (e.g., Sora, FLUX, SD3) have largely replaced the U-Net with **Diffusion Transformers (DiT)**.
+
+* **Patchification:** The input image or video frame is divided into non-overlapping spatial/temporal visual "patches" (acting like text tokens).
+* **Latent Attention:** A Transformer block processes these visual patches through self-attention layers while taking conditioned text embeddings into account.
+* **Scalability:** DiT architectures follow clear empirical scaling laws—allocating more compute to the vision transformer directly improves image/video quality and adherence to complex prompts.
+
+---
+
+## 4. State Space Models (SSMs) & Hybrids (Mamba)
+
+The core limitation of the standard Transformer is its quadratic scaling bottleneck—computing self-attention across a context of length $N$ costs $O(N^2)$ compute and memory.
+
+To overcome this, **Selective State Space Models (SSMs)** like Mamba have emerged:
+* **Linear Scaling $O(N)$:** SSMs process sequences continuously through a compressed state representation, maintaining constant memory usage over long inputs.
+* **Selective Filtering:** Mamba introduces input-dependent gate matrices that allow the model to dynamically remember relevant context and forget noise.
+* **Hybrid Systems:** Modern state-of-the-art long-context models combine both mechanisms—interleaving standard Attention blocks (for precise factual recall) with SSM/Mamba layers (for rapid linear sequence processing).
+
+---
+
+## 📊 Architecture Comparison
+
+| Architecture | Primary Strengths | Main Weakness / Bottleneck | Key Applications |
+| :--- | :--- | :--- | :--- |
+| **Decoder-Only Transformer** | Superior global reasoning, in-context learning | $O(N^2)$ context memory quadratic limit | LLMs (GPT, Llama), Code generation |
+| **Mixture of Experts (MoE)** | High parameter capacity with low compute footprint | High GPU VRAM overhead (all weights must fit in memory) | Efficient high-tier LLMs |
+| **Diffusion Transformer (DiT)** | Unmatched spatial & visual coherence | High latency; requires iterative sampling steps | Image generation (SD3, FLUX), Video generation (Sora) |
+| **State Space Model (Mamba)** | $O(N)$ linear processing speed, ultra-long contexts | Weaker at precise token-level lookup over vast documents | Streaming speech, real-time code analysis, hybrid LLMs |
+```
+
+---
+```mermaid
+graph TD
+    A[Input Tokens] --> B[Embeddings + Positional Encoding]
+    B --> C[Attention Block: Q, K, V Matrices]
+    C --> D[FFN Layer]
+    D --> E[Output Probabilities]
+```
+
+```mermaid
+graph TD
+    subgraph Decoder-Only
+        D1[Autoregressive] --> D2[Predicts Next Token] --> D3[GPT, Llama]
+    end
+    subgraph Encoder-Only
+        E1[Bidirectional] --> E2[Sees Full Context] --> E3[BERT, Embeddings]
+    end
+    subgraph Encoder-Decoder
+        ED1[Seq-to-Seq] --> ED2[Encodes Input, Decodes Output] --> ED3[T5, Whisper]
+    end
+```
 # Result

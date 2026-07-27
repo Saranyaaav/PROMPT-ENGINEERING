@@ -263,7 +263,7 @@ If you enter the prompt: `"Explain photosynthesis"`
 
 ---
 
-> 📝 **Key Takeaway / Exam Summary:**  
+> 📝 **Key Takeaway:**  
 > Generative AI architectures such as **Transformers, GANs, VAEs, and Diffusion models** enable AI systems to create new content, with **Transformers** serving as the dominant architecture for modern text-based generative AI.
 
 # Gemini:

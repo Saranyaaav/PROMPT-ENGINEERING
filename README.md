@@ -255,9 +255,9 @@ This core shift makes them the standard for:
 
 If you enter the prompt: `"Explain photosynthesis"`
 
-**Tokenization & Embedding:** The prompt is split into tokens and converted into numerical vector representations.
-**Positional Encoding & Self-Attention:** The transformer adds sequence position and evaluates relationships between words (e.g., mapping how "photosynthesis" connects to contextual concepts).
-**Autoregressive Generation:** The model predicts and outputs the answer token-by-token based on calculated probability distributions.
+* **Tokenization & Embedding:** The prompt is split into tokens and converted into numerical vector representations.
+* **Positional Encoding & Self-Attention:** The transformer adds sequence position and evaluates relationships between words (e.g., mapping how "photosynthesis" connects to contextual concepts).
+* **Autoregressive Generation:** The model predicts and outputs the answer token-by-token based on calculated probability distributions.
 
 ---
 

@@ -351,7 +351,6 @@ To overcome this, **Selective State Space Models (SSMs)** like Mamba have emerge
 
 # Gemini:
 # 3.  Generative AI architecture  and its applications
-# Generative AI Architectures and Their Applications
 
 Generative AI architectures have evolved from simple probabilistic generators into massive, multimodal engines capable of reasoning, synthesizing media, and processing millions of tokens in real time.
 
@@ -359,7 +358,7 @@ Understanding Generative AI requires looking at both the underlying model archit
 
 ---
 
-# Part 1: Core Generative AI Architectures
+## Part 1: Core Generative AI Architectures
 
 Modern Generative AI is built on four dominant architectural paradigms, often combined into hybrid systems.
 
@@ -377,7 +376,7 @@ Modern Generative AI is built on four dominant architectural paradigms, often co
 
 ---
 
-## 1. Transformers & Multi-Head Self-Attention
+## I. Transformers & Multi-Head Self-Attention
 
 Transformers rely on **Self-Attention** to evaluate relationships between all tokens in a sequence simultaneously rather than processing them sequentially.
 
@@ -427,7 +426,7 @@ The attention mechanism is computed as:
 
 ---
 
-## 2. Diffusion Transformers (DiT)
+## II. Diffusion Transformers (DiT)
 
 Diffusion models generate high-quality media by gradually removing noise from random data.
 
@@ -460,7 +459,7 @@ Self-attention layers process image patches together with text embeddings to ite
 
 ---
 
-## 3. Selective State Space Models (SSMs) & Mamba
+## III. Selective State Space Models (SSMs) & Mamba
 
 Traditional Transformers require memory that grows quadratically:
 
@@ -498,7 +497,7 @@ Modern architectures combine:
 
 ---
 
-## 4. Mixture of Experts (MoE)
+## IV. Mixture of Experts (MoE)
 
 Mixture of Experts allows extremely large models without activating every parameter during inference.
 
@@ -526,7 +525,7 @@ while activating only
 
 ---
 
-# Part 2: Applications Across Domains
+## Part 2: Applications Across Domains
 
 | Domain | Key Applications | Architectural Backbone |
 |---------|-----------------|--------------------------|
@@ -538,7 +537,7 @@ while activating only
 
 ---
 
-# Summary
+## Summary
 
 Modern Generative AI is driven by four major architectural families:
 

@@ -106,15 +106,6 @@ Traditional AI often focuses on tasks like classification, detection, or predict
 Generative AI is technology that learns from examples and uses that knowledge to create new, human-like content.
 
 # Gemini:
-# 🤖 Generative AI: Foundational Concepts & Architectures
-
-**Generative AI** refers to algorithms and deep learning models that create **brand-new content**—such as text, code, images, audio, and 3D models—by learning the underlying patterns of existing data.  
-
-Unlike traditional or *discriminative* AI (which primarily analyzes or categorizes existing data), generative AI uses probability and pattern recognition to generate realistic new outputs.
-
----
-
-## 1. Core Mechanics: How Models Process & Learn
 # 1. Explain the foundational concepts of Generative AI
 Generative AI refers to algorithms and deep learning models that can create brand-new content—such as text, code, images, audio, and 3D models—by learning the underlying patterns of existing data.
 Instead of just analyzing or categorizing existing data (which traditional or discriminative AI does), generative AI uses probability and pattern recognition to generate realistic new outputs.

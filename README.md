@@ -417,7 +417,7 @@ graph TD
 ```
 
 ## IV. Advanced Generative AI Architectures
-```text
+```mermaid
 graph TD
     A[Input Tokens] --> B[Embeddings + Positional Encoding]
     B --> C[Attention Block: Q, K, V Matrices]

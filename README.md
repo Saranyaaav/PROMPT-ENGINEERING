@@ -351,7 +351,203 @@ To overcome this, **Selective State Space Models (SSMs)** like Mamba have emerge
 
 # Gemini:
 # 3.  Generative AI architecture  and its applications
+# Generative AI Architectures and Their Applications
 
+Generative AI architectures have evolved from simple probabilistic generators into massive, multimodal engines capable of reasoning, synthesizing media, and processing millions of tokens in real time.
+
+Understanding Generative AI requires looking at both the underlying model architectures that power these systems and the real-world applications they enable.
+
+---
+
+# Part 1: Core Generative AI Architectures
+
+Modern Generative AI is built on four dominant architectural paradigms, often combined into hybrid systems.
+
+```text
+                          ┌───────────────────────────┐
+                          │ Modern Generative AI      │
+                          │ Architectures             │
+                          └─────────────┬─────────────┘
+                                        │
+        ┌───────────────────┬───────────┴───────────┬────────────────────┐
+        ▼                   ▼                       ▼                    ▼
+  Transformers       Diffusion Models      State Space Models      Mixture of
+(Attention-Based)      (DiT / Latent)         (Mamba / SSMs)      Experts (MoE)
+```
+
+---
+
+## 1. Transformers & Multi-Head Self-Attention
+
+Transformers rely on **Self-Attention** to evaluate relationships between all tokens in a sequence simultaneously rather than processing them sequentially.
+
+### How It Works
+
+Input data is converted into three matrices:
+
+- **Query (Q)**
+- **Key (K)**
+- **Value (V)**
+
+The attention mechanism is computed as:
+
+\[
+\text{Attention}(Q,K,V)=\text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+\]
+
+### Primary Variants
+
+### Decoder-Only (Autoregressive)
+
+- Predicts the next token from previous tokens.
+- Used for:
+  - Text generation
+  - Chatbots
+  - Coding assistants
+  - Reasoning
+
+**Examples**
+
+- GPT-4
+- Llama
+- Claude
+
+### Encoder-Decoder
+
+- Encodes the input before generating an output.
+- Best suited for:
+  - Translation
+  - Summarization
+  - Speech recognition
+
+**Examples**
+
+- T5
+- Whisper
+
+---
+
+## 2. Diffusion Transformers (DiT)
+
+Diffusion models generate high-quality media by gradually removing noise from random data.
+
+Modern systems replace traditional **U-Net** architectures with **Transformer-based Diffusion Transformers (DiT).**
+
+### Process
+
+### Patchification
+
+Images or videos are divided into small patches that become visual tokens.
+
+### Latent Denoising
+
+Self-attention layers process image patches together with text embeddings to iteratively remove noise until a realistic image or video is produced.
+
+### Applications
+
+- Text-to-Image Generation
+- Text-to-Video Generation
+- Image Editing
+- Video Synthesis
+
+### Examples
+
+- FLUX
+- Midjourney
+- Sora
+- Wan 2.1
+- Runway
+
+---
+
+## 3. Selective State Space Models (SSMs) & Mamba
+
+Traditional Transformers require memory that grows quadratically:
+
+\[
+O(N^2)
+\]
+
+This becomes expensive for long documents.
+
+Mamba introduces **Selective State Space Models**, reducing complexity to:
+
+\[
+O(N)
+\]
+
+### Key Idea
+
+The model dynamically decides:
+
+- Which information to remember
+- Which information to forget
+
+### Hybrid Systems
+
+Modern architectures combine:
+
+- Mamba Layers → Efficient long-context processing
+- Attention Layers → Accurate token retrieval
+
+### Advantages
+
+- Million-token context
+- Lower memory usage
+- Faster inference
+
+---
+
+## 4. Mixture of Experts (MoE)
+
+Mixture of Experts allows extremely large models without activating every parameter during inference.
+
+### How It Works
+
+A **Gating Network** routes each input token to only a small number of specialised neural networks (called experts).
+
+Instead of using all parameters, only a subset is activated.
+
+### Benefits
+
+- Higher model capacity
+- Lower inference cost
+- Better scalability
+
+### Example
+
+A model may contain:
+
+- **100B total parameters**
+
+while activating only
+
+- **20B parameters per token**
+
+---
+
+# Part 2: Applications Across Domains
+
+| Domain | Key Applications | Architectural Backbone |
+|---------|-----------------|--------------------------|
+| **Software & Engineering** | Code generation, debugging, NL-to-SQL, CAD modelling | Autoregressive LLMs, Hybrid MoEs |
+| **Media & Entertainment** | Synthetic videos, image generation, voice synthesis, game content | Diffusion Transformers (DiT), Multimodal LLMs |
+| **Healthcare & Life Sciences** | Protein design, genomics, synthetic patient records, medical imaging | Mamba/SSMs, Domain-specific LLMs, VAEs |
+| **Finance & Legal** | Contract analysis, earnings report generation, fraud detection, compliance auditing | Long-context Hybrid LLMs, RAG |
+| **Enterprise & Robotics** | AI agents, workflow automation, conversational assistants, robot navigation | Vision-Language-Action (VLA) Models, Speech LLMs |
+
+---
+
+# Summary
+
+Modern Generative AI is driven by four major architectural families:
+
+- **Transformers** → Best for language understanding, reasoning, and code generation.
+- **Diffusion Transformers (DiT)** → Best for image and video generation.
+- **Selective State Space Models (Mamba/SSMs)** → Best for long-context processing with linear scalability.
+- **Mixture of Experts (MoE)** → Enables massive models by activating only a subset of parameters during inference.
+
+These architectures power applications across software engineering, healthcare, finance, media, robotics, and enterprise automation, making Generative AI one of the most transformative technologies in modern computing.
 # Perplexity:
 # 4. Generative AI impact of scaling in LLMs
 Here is a polished prompt you can use:

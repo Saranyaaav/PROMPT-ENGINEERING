@@ -211,4 +211,61 @@ As they train against each other in a zero-sum game, the generator becomes adept
 | **Hallucination** | Occurs when a model outputs facts or assertions that sound confident and authoritative but are mathematically or factually incorrect. |
 | **Latent Space** | A compressed, high-dimensional space where feature representations are clustered by semantic similarity. |
 
+# Perplexity:
+# 2. Focusing on Generative AI architectures. (like transformers)
+# Generative AI Architectures & Transformers
+
+Generative AI architectures are the underlying model designs that allow AI to create new content. **Transformers** stand as the foundational architecture behind modern Large Language Models (LLMs) because of their ability to handle context and long-range relationships effectively through **self-attention**—a mechanism that helps the model focus on the most relevant parts of an input sequence while generating output.
+
+---
+
+## 🛠️ Main Architecture Components
+
+* **Input Representation:** Text or raw data is converted into high-dimensional numerical vectors called **embeddings**.
+* **Positional Information:** Because transformers do not process text sequentially by default, **positional encodings** are added so the model understands word order.
+* **Self-Attention:** Each token calculates relevance scores relative to every other token in the sequence, capturing deeper contextual relationships.
+* **Feed-Forward Layers:** These neural network layers process the output of self-attention mechanisms into richer, higher-level representations.
+* **Decoder Generation:** For generative tasks, the decoder iteratively predicts the next token until the output sequence is complete.
+
+---
+
+## ⚡ Why Transformers Matter
+
+Transformers largely replaced older sequential models like RNNs and LSTMs because they allow for **parallelized processing** and capture **long-distance dependencies** far better. 
+
+This core shift makes them the standard for:
+* Text Generation & Summarization
+* Machine Translation
+* Conversational AI & Chatbots
+* Code Generation & Autocompletion
+
+---
+
+## 🏛️ Common Generative Architectures
+
+| Architecture Type | Description | Primary Use Cases |
+| :--- | :--- | :--- |
+| **Decoder-Only Transformers** | Generates text auto-regressively (one token at a time). | Modern LLMs, Chatbots, Code Completion |
+| **Encoder-Decoder Transformers** | Processes input with an encoder and maps it to output via a decoder. | Translation, Summarization, File Conversions |
+| **Autoregressive Models** | Generates sequence data step-by-step using previous outputs as context. | Text & Audio Generation |
+| **Diffusion Models** | Starts with Gaussian noise and iteratively denoises it into high-resolution output. | Image & Video Generation |
+| **GANs & VAEs** | Frameworks utilizing adversarial loops or latent space vectors to produce data. | Image synthesis, Deepfakes, Data Imputation |
+
+---
+
+## 💡 Example Walkthrough
+
+If you enter the prompt: `"Explain photosynthesis"`
+
+1. **Tokenization & Embedding:** The prompt is split into tokens and converted into numerical vector representations.
+2. **Positional Encoding & Self-Attention:** The transformer adds sequence position and evaluates relationships between words (e.g., mapping how "photosynthesis" connects to contextual concepts).
+3. **Autoregressive Generation:** The model predicts and outputs the answer token-by-token based on calculated probability distributions.
+
+---
+
+> 📝 **Key Takeaway / Exam Summary:**  
+> Generative AI architectures such as **Transformers, GANs, VAEs, and Diffusion models** enable AI systems to create new content, with **Transformers** serving as the dominant architecture for modern text-based generative AI.
+
+# Gemini:
+# 2. Focusing on Generative AI architectures. (like transformers)
 # Result

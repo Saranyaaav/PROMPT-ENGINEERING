@@ -270,7 +270,7 @@ Generative AI relies on specialized neural network architectures designed to lea
 
 ---
 
-## 1. The Transformer Architecture (The Dominant Engine)
+## I. The Transformer Architecture (The Dominant Engine)
 
 Introduced in 2017, the Transformer replaced sequential recurrence (like RNNs) with **Self-Attention**, allowing the model to weigh the relationship between every pair of tokens in a sequence simultaneously.
 
@@ -307,7 +307,7 @@ $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)
 
 ---
 
-## 2. Mixture of Experts (MoE)
+## II. Mixture of Experts (MoE)
 
 As transformers grew to hundreds of billions of parameters, standard "dense" layers became computationally expensive to run for every single token. **Mixture of Experts (MoE)** decouples total parameter size from inference compute cost.
 
@@ -316,7 +316,7 @@ As transformers grew to hundreds of billions of parameters, standard "dense" lay
 
 ---
 
-## 3. Diffusion Transformers (DiT)
+## III. Diffusion Transformers (DiT)
 
 Historically, image and video generation relied on U-Net convolutional backbones paired with diffusion noise-reduction loops. Modern high-fidelity generators (e.g., Sora, FLUX, SD3) have largely replaced the U-Net with **Diffusion Transformers (DiT)**.
 
@@ -326,7 +326,7 @@ Historically, image and video generation relied on U-Net convolutional backbones
 
 ---
 
-## 4. State Space Models (SSMs) & Hybrids (Mamba)
+## IV. State Space Models (SSMs) & Hybrids (Mamba)
 
 The core limitation of the standard Transformer is its quadratic scaling bottleneck—computing self-attention across a context of length $N$ costs $O(N^2)$ compute and memory.
 

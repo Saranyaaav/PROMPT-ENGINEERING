@@ -354,6 +354,22 @@ To overcome this, **Selective State Space Models (SSMs)** like Mamba have emerge
 
 # Perplexity:
 # 4. Generative AI impact of scaling in LLMs
+Here is a polished prompt you can use:
+
+> “Explain the impact of scaling in Large Language Models (LLMs). Discuss how increasing model size, training data, and compute affects performance, capabilities, accuracy, hallucination, cost, and limitations.”
+
+### Shorter version
+> “Explain the impact of scaling in LLMs and how it changes model performance and limitations.”
+
+### Why this prompt is good
+- It asks about both benefits and limitations of scaling.
+- It encourages the model to explain performance, cost, and hallucination.
+- It is clear enough for comparing different AI tools with the same input.
+
+### Slightly more advanced version
+> “Describe the scaling effects in LLMs, including model size, dataset size, and compute. Explain how scaling influences learning ability, reasoning, emergent behavior, training cost, and real-world deployment challenges.”
+
+I can also give you the **LLM and how it is built** prompt in the same style.
 
 # Gemini:
 # 4. Generative AI impact of scaling in LLMs

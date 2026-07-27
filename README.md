@@ -368,6 +368,8 @@ A **Large Language Model (LLM)** is a deep learning system trained on vast amoun
 
 ---
 
+<img width="1012" height="666" alt="image" src="https://github.com/user-attachments/assets/e1fc0b92-e063-41ec-acb0-4e48ad5a7f93" />
+
 ## 🛠️ How an LLM is Built: Step-by-Step
 
 Building an LLM requires massive computational infrastructure, carefully curated datasets, and a multi-stage training pipeline.

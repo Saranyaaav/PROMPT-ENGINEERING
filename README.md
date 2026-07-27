@@ -452,6 +452,23 @@ Building a production-grade LLM involves a multi-stage training lifecycle:
 # Perplexity:
 # 5. Explain about LLM and how it is build
 
+Here is a clean prompt you can use:
+
+> “Explain what a Large Language Model (LLM) is and how it is built. Include the main stages such as data collection, preprocessing, tokenization, model training, fine-tuning, evaluation, and deployment.”
+
+### Shorter version
+> “Explain about LLM and how it is built.”
+
+### More detailed version
+> “Describe what a Large Language Model (LLM) is, how it works, and how it is built from data to deployment. Explain training data, tokenization, neural network architecture, pretraining, fine-tuning, evaluation, and real-world use.”
+
+### Why this prompt works
+- It asks for both definition and process.
+- It makes the response structured and easy to compare across AI tools.
+- It covers the full lifecycle of an LLM, which is useful for an assignment or project report.
+
+I can also combine all 5 prompts into one neat project sheet with a comparison table.
+
 # Gemini:
 # 5. Explain about LLM and how it is build
 

@@ -82,17 +82,18 @@ Act as an AI Systems & Evaluation Engineer. Walk through the complete pipeline o
 
 # Perplexity: 
 # 1. Explain the foundational concepts of Generative AI
+
 Generative AI is a type of artificial intelligence that learns patterns from existing data and creates new content that resembles that data. It can generate text, images, audio, code, video, and more.
 
 ---
 
 ## Foundational Concepts
 
-**Learning from data:** Generative AI systems are trained on large datasets so they can recognize structure, style, and relationships.
-**Pattern generation:** Instead of only classifying or predicting labels, they produce new outputs based on learned patterns.
-**Probabilistic modeling:** These models estimate what is most likely to come next in a sequence, such as the next word in a sentence or the next pixel in an image.
-**Input prompt:** A user provides a prompt, and the model generates a response based on that instruction.
-**Training and inference:** During training, the model learns from data. During inference, it uses that learning to create new content.
+* **Learning from data:** Generative AI systems are trained on large datasets so they can recognize structure, style, and relationships.
+* **Pattern generation:** Instead of only classifying or predicting labels, they produce new outputs based on learned patterns.
+* **Probabilistic modeling:** These models estimate what is most likely to come next in a sequence, such as the next word in a sentence or the next pixel in an image.
+* **Input prompt:** A user provides a prompt, and the model generates a response based on that instruction.
+* **Training and inference:** During training, the model learns from data. During inference, it uses that learning to create new content.
 
 ---
 
@@ -106,10 +107,10 @@ Traditional AI often focuses on tasks like classification, detection, or predict
 
 ## Main Types of Generative Models
 
-**Autoregressive Models:** Generate output step by step, one token at a time.
-**Variational Autoencoders (VAEs):** Learn compact representations and generate variations of data.
-**Generative Adversarial Networks (GANs):** Use two networks—one to generate and one to evaluate—to improve output quality.
-**Diffusion Models:** Start with noise and gradually refine it into a realistic image or other output.
+* **Autoregressive Models:** Generate output step by step, one token at a time.
+* **Variational Autoencoders (VAEs):** Learn compact representations and generate variations of data.
+* **Generative Adversarial Networks (GANs):** Use two networks—one to generate and one to evaluate—to improve output quality.
+* **Diffusion Models:** Start with noise and gradually refine it into a realistic image or other output.
 
 ---
 
@@ -123,7 +124,7 @@ Traditional AI often focuses on tasks like classification, detection, or predict
 
 ---
 
-> **TL;DR / In One Line:**  
+> **In One Line:**  
 > Generative AI is technology that learns from examples and uses that knowledge to create new, human-like content.
 
 # Gemini:

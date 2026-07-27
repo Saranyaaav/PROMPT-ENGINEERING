@@ -372,26 +372,26 @@ A **Large Language Model (LLM)** is a deep learning system trained on vast amoun
 
 Building an LLM requires massive computational infrastructure, carefully curated datasets, and a multi-stage training pipeline.
 
-### 1. Data Collection & Preprocessing (Data Curation)
+### I. Data Collection & Preprocessing (Data Curation)
 * **Web Scraping:** Gathering trillions of tokens from public websites, books, research papers, and code repositories.
 * **Filtering & Cleaning:** Removing duplicates, low-quality text, toxic content, and personally identifiable information (PII).
 * **Tokenization:** Breaking raw text into sub-word units (tokens) and mapping them into numerical vectors (embeddings).
 
-### 2. Architectural Setup (Transformer Backbone)
+### II. Architectural Setup (Transformer Backbone)
 * Setting up a **Decoder-Only Transformer** architecture (like Llama or GPT) or a **Hybrid Mixture-of-Experts (MoE)** network.
 * Defining core hyperparameters: layer count, hidden dimension size, context length window, and multi-head attention mechanisms.
 
-### 3. Pre-Training (Self-Supervised Learning)
+### III. Pre-Training (Self-Supervised Learning)
 > ⚡ *Requires months of GPU cluster compute.*
 * **Objective:** Predict the next token across trillions of input tokens (Causal Language Modeling).
 * **Process:** The model starts with random weights. Operating across thousands of GPUs (using 3D parallelism: Data, Pipeline, and Tensor parallelism), it updates billions of parameters via gradient descent to minimize cross-entropy loss.
 * **Result:** A **Base Model** that understands language grammar, world facts, and reasoning, but functions purely as a text completion engine.
 
-### 4. Supervised Fine-Tuning (SFT / Instruction Tuning)
+### IV. Supervised Fine-Tuning (SFT / Instruction Tuning)
 * **Objective:** Teach the base model to act as a helpful conversational assistant rather than just completing random text.
 * **Process:** Training the base model on curated, high-quality prompt-response pairs (Q&A, formatting tasks, tool-use demonstrations).
 
-### 5. Alignment & Reinforcement Learning (RLHF / DPO)
+### V. Alignment & Reinforcement Learning (RLHF / DPO)
 * **Objective:** Align model behavior with human preferences for safety, truthfulness, and helpfulness.
 * **Methodology:** Using **Reinforcement Learning from Human Feedback (RLHF)** or **Direct Preference Optimization (DPO)** to reward desirable outputs while penalizing unsafe, biased, or hallucinated responses.
 

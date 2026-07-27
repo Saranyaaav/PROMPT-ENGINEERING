@@ -115,25 +115,6 @@ Unlike traditional or *discriminative* AI (which primarily analyzes or categoriz
 ---
 
 ## 1. Core Mechanics: How Models Process & Learn
-
-### Tokenization & Embeddings
-Generative models do not read text or see images the way humans do.
-* **Tokenization:** Raw data is broken down into smaller pieces called **tokens** (words, sub-words, or image patches).
-* **Embeddings:** Tokens are converted into high-dimensional numerical vectors. These vectors map semantic relationships in geometric space (e.g., placing the vector for `"king"` near `"queen"` or `"royal"`).
-
-### Probability & Next-Item Prediction
-At its core, a generative text model calculates probability distributions over a vast vocabulary. Given an input prompt, it predicts the most statistically likely next token, updates its context window, and repeats the process sequentially.
-
----
-
-## 2. Key Architectural Models
-
-The explosive growth of generative AI relies on several foundational architectures:
-
-
-
-
-
 # 1. Explain the foundational concepts of Generative AI
 Generative AI refers to algorithms and deep learning models that can create brand-new content—such as text, code, images, audio, and 3D models—by learning the underlying patterns of existing data.
 Instead of just analyzing or categorizing existing data (which traditional or discriminative AI does), generative AI uses probability and pattern recognition to generate realistic new outputs.
@@ -149,6 +130,7 @@ At its core, a generative text model calculates probability distributions over a
 
 ## II. Key Architectural Models
 The explosive growth of generative AI relies on several foundational architectures:                      
+```text
                       ┌─────────────────────────────────────────┐
                       │    Generative AI Model Architectures    │
                       └────────────────────┬────────────────────┘
@@ -157,6 +139,7 @@ The explosive growth of generative AI relies on several foundational architectur
          ▼                   ▼                     ▼                    ▼
    Transformers       Diffusion Models          GANs                  VAEs
 (LLMs, Code, Text)   (Midjourney, Stable)  (Style Transfer, Art)   (Data Compression)
+```
 
 Transformers (Attention Mechanism):
 Introduced in 2017, the Transformer architecture powers Large Language Models (LLMs).  
@@ -175,6 +158,7 @@ GANs use a competitive framework involving two neural networks:
 •	As they train against each other, the generator becomes adept at producing realistic outputs.  
 
 ## III. Training LifecyclesBuilding a functional generative model happens in distinct stages:
+```text
 ┌─────────────────────────┐
 │    Pre-Training         │ Huge unlabeled datasets (raw internet data)
 └───────────┬─────────────┘
@@ -186,7 +170,7 @@ GANs use a competitive framework involving two neural networks:
 ┌─────────────────────────┐
 │    Alignment (RLHF/DPO) │ Human feedback alignment for safety, accuracy, and tone
 └─────────────────────────┘
-
+```
 Pre-Training (Unsupervised / Self-Supervised): The model ingests billions of parameters worth of raw, unlabeled data to learn grammar, facts, reasoning basics, and structure.
 Supervised Fine-Tuning (SFT): The base model is trained on high-quality, curated Q&A pairs so it learns to follow instructions rather than just completing random text.
 Alignment (RLHF / DPO): Reinforcement Learning from Human Feedback or Direct Preference Optimization adjusts outputs using human feedback, steering the model toward helpfulness, honesty, and safety while suppressing harmful behavior.

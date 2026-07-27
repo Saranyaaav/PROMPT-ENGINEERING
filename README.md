@@ -111,13 +111,15 @@ Generative AI refers to algorithms and deep learning models that can create bran
 Instead of just analyzing or categorizing existing data (which traditional or discriminative AI does), generative AI uses probability and pattern recognition to generate realistic new outputs.
 
 ## I. Core Mechanics: How Models Process & Learn
-Tokenization & Embeddings:
-Generative models do not read text or see images the way humans do.
-•	Tokenization: Raw data is broken down into smaller pieces called tokens (which can be words, parts of words, or image patches).  
-•	Embeddings: Tokens are converted into high-dimensional numerical vectors. These vectors map semantic relationships in geometric space (e.g., placing the vector for "king" near "queen" or "royal").
+### Core Mechanisms
 
-Probability & Next-Item Prediction:
-At its core, a generative text model calculates probability distributions over a vast vocabulary. Given an input prompt, it predicts the most statistically likely next token, updates its context, and repeats the process sequentially.
+*   **Tokenization & Embeddings**
+    Generative models do not read text or see images the way humans do.
+    *   **Tokenization:** Raw data is broken down into smaller pieces called tokens (which can be words, parts of words, or image patches).
+    *   **Embeddings:** Tokens are converted into high-dimensional numerical vectors. These vectors map semantic relationships in geometric space (e.g., placing the vector for *"king"* near *"queen"* or *"royal"*).
+
+*   **Probability & Next-Item Prediction**
+    At its core, a generative text model calculates probability distributions over a vast vocabulary. Given an input prompt, it predicts the most statistically likely next token, updates its context, and repeats the process sequentially.
 
 ## II. Key Architectural Models
 The explosive growth of generative AI relies on several foundational architectures:                      

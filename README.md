@@ -156,21 +156,29 @@ The explosive growth of generative AI relies on several foundational architectur
 (LLMs, Code, Text)   (Midjourney, Stable)  (Style Transfer, Art)   (Data Compression)
 ```
 
-Transformers (Attention Mechanism):
-Introduced in 2017, the Transformer architecture powers Large Language Models (LLMs).  
-•	Self-Attention: Unlike older recurrent models (RNNs or LSTMs) that processed text sequentially, Transformers evaluate the relationship between all words in a sequence simultaneously.
-•	Contextual Understanding: This allows the model to track long-range dependencies—understanding what "it" refers to even if the noun was introduced paragraphs earlier.
+#### ⚡ Transformers (Attention Mechanism)
+Introduced in 2017, the Transformer architecture powers modern Large Language Models (LLMs).
 
-Diffusion Models:
-Diffusion models drive modern text-to-image generators (e.g., Stable Diffusion, Midjourney).  
-•	Forward Diffusion: During training, Gaussian noise is added step-by-step to an image until it becomes pure static.
-•	Reverse Diffusion: The model learns to reverse this process—removing noise step-by-step to reconstruct or generate a crisp image conditioned on a text prompt.  
+* **Self-Attention:** Unlike older recurrent models (RNNs or LSTMs) that processed text sequentially, Transformers evaluate the relationship between all words in a sequence simultaneously.
+* **Contextual Understanding:** This allows the model to track long-range dependencies—understanding what *"it"* refers to even if the original noun was introduced paragraphs earlier.
 
-Generative Adversarial Networks (GANs):
+---
+
+#### 🎨 Diffusion Models
+Diffusion models drive state-of-the-art text-to-image generators (e.g., Stable Diffusion, Midjourney).
+
+* **Forward Diffusion:** During training, Gaussian noise is added step-by-step to an image until it becomes pure static.
+* **Reverse Diffusion:** The model learns to reverse this process—removing noise step-by-step to reconstruct or generate a crisp image conditioned on a text prompt.
+
+---
+
+#### ⚔️ Generative Adversarial Networks (GANs)
 GANs use a competitive framework involving two neural networks:
-•	Generator: Creates fake data samples.  
-•	Discriminator: Evaluates whether the sample is real (from training data) or fake (from the generator).  
-•	As they train against each other, the generator becomes adept at producing realistic outputs.  
+
+* **Generator:** Creates fake data samples.
+* **Discriminator:** Evaluates whether the sample is real (from training data) or fake (from the generator).
+
+As they train against each other in a zero-sum game, the generator becomes adept at producing realistic outputs.
 
 ## III. Training LifecyclesBuilding a functional generative model happens in distinct stages:
 ```text

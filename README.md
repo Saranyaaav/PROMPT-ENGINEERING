@@ -443,17 +443,10 @@ To overcome this, **Selective State Space Models (SSMs)** like Mamba have emerge
 | **Diffusion Transformer (DiT)** | Unmatched spatial & visual coherence | High latency; requires iterative sampling steps | Image generation (SD3, FLUX), Video generation (Sora) |
 | **State Space Model (Mamba)** | $O(N)$ linear processing speed, ultra-long contexts | Weaker at precise token-level lookup over vast documents | Streaming speech, real-time code analysis, hybrid LLMs |
 ```
-
 ```mermaid
 graph TD
-    subgraph Decoder-Only
-        D1[Autoregressive] --> D2[Predicts Next Token] --> D3[GPT, Llama]
-    end
-    subgraph Encoder-Only
-        E1[Bidirectional] --> E2[Sees Full Context] --> E3[BERT, Embeddings]
-    end
-    subgraph Encoder-Decoder
-        ED1[Seq-to-Seq] --> ED2[Encodes Input, Decodes Output] --> ED3[T5, Whisper]
-    end
-```
+    A[Input Tokens] --> B[Embeddings + Positional Encoding]
+    B --> C[Attention Block: Q, K, V Matrices]
+    C --> D[FFN Layer]
+    D --> E[Output Probabilities]
 # Result

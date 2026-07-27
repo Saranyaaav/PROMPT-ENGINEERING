@@ -347,20 +347,6 @@ To overcome this, **Selective State Space Models (SSMs)** like Mamba have emerge
 | **State Space Model (Mamba)** | $O(N)$ linear processing speed, ultra-long contexts | Weaker at precise token-level lookup over vast documents | Streaming speech, real-time code analysis, hybrid LLMs |
 ```
 
----
-
-### Option 2: Rendered Diagrams with GitHub Mermaid
-
-If you prefer interactive graphic diagrams natively rendered by GitHub, replace the ASCII sections with these Mermaid code blocks:
-
-```mermaid
-graph TD
-    A[Input Tokens] --> B[Embeddings + Positional Encoding]
-    B --> C[Attention Block: Q, K, V Matrices]
-    C --> D[FFN Layer]
-    D --> E[Output Probabilities]
-```
-
 ```mermaid
 graph TD
     subgraph Decoder-Only

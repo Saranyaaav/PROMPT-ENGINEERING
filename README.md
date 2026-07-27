@@ -346,5 +346,22 @@ To overcome this, **Selective State Space Models (SSMs)** like Mamba have emerge
 | **Diffusion Transformer (DiT)** | Unmatched spatial & visual coherence | High latency; requires iterative sampling steps | Image generation (SD3, FLUX), Video generation (Sora) |
 | **State Space Model (Mamba)** | $O(N)$ linear processing speed, ultra-long contexts | Weaker at precise token-level lookup over vast documents | Streaming speech, real-time code analysis, hybrid LLMs |
 
+# Perplexity:
+# 3. Generative AI architecture  and its applications
+
+# Gemini:
+# 3.  Generative AI architecture  and its applications
+
+# Perplexity:
+# 4. Generative AI impact of scaling in LLMs
+
+# Gemini:
+# 4. Generative AI impact of scaling in LLMs
+
+# Perplexity:
+# 5. Explain about LLM and how it is build
+
+# Gemini:
+# 5. Explain about LLM and how it is build
 
 # Result

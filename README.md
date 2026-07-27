@@ -162,9 +162,14 @@ GANs use a competitive framework involving two neural networks:
 │    Alignment (RLHF/DPO) │ Human feedback alignment for safety, accuracy, and tone
 └─────────────────────────┘
 ```
-Pre-Training (Unsupervised / Self-Supervised): The model ingests billions of parameters worth of raw, unlabeled data to learn grammar, facts, reasoning basics, and structure.
-Supervised Fine-Tuning (SFT): The base model is trained on high-quality, curated Q&A pairs so it learns to follow instructions rather than just completing random text.
-Alignment (RLHF / DPO): Reinforcement Learning from Human Feedback or Direct Preference Optimization adjusts outputs using human feedback, steering the model toward helpfulness, honesty, and safety while suppressing harmful behavior.
+**Pre-Training (Unsupervised / Self-Supervised)**
+   The model ingests billions of parameters worth of raw, unlabeled data to learn grammar, facts, reasoning basics, and structure.
+
+**Supervised Fine-Tuning (SFT)**
+   The base model is trained on high-quality, curated Q&A pairs so it learns to follow instructions rather than just completing random text.
+
+**Alignment (RLHF / DPO)**
+   Reinforcement Learning from Human Feedback or Direct Preference Optimization adjusts outputs using human feedback, steering the model toward helpfulness, honesty, and safety while suppressing harmful behavior.
 
 ## IV. Operational & Performance Dynamics
 | Concept | Description |

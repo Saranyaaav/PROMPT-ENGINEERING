@@ -547,7 +547,6 @@ Modern Generative AI is driven by four major architectural families:
 These architectures power applications across software engineering, healthcare, finance, media, robotics, and enterprise automation, making Generative AI one of the most transformative technologies in modern computing.
 # Perplexity:
 # 4. Generative AI impact of scaling in LLMs
-## Generative AI: Impact of Scaling in LLMs
 
 Scaling is the core driver of recent progress in generative AI. For large language models (LLMs), **scale** primarily means:
 
@@ -559,7 +558,7 @@ Empirical **scaling laws** show that as you increase all three in a balanced way
 
 ---
 
-### 1. Power-law improvements
+### I. Power-law improvements
 
 Studies on language models show that **cross-entropy loss decreases as a power law** with respect to:
 
@@ -579,7 +578,7 @@ This means:
 
 ---
 
-### 2. Emergent capabilities
+### II. Emergent capabilities
 
 As LLMs scale, **new behaviors emerge** that are weak or absent in smaller models:
 
@@ -597,7 +596,7 @@ From a generative AI standpoint, scaling has enabled:
 
 ---
 
-### 3. Balanced scaling: parameters, tokens, compute
+### III. Balanced scaling: parameters, tokens, compute
 
 Scaling laws also show **how** to scale efficiently:
 
@@ -616,7 +615,7 @@ Implications:
 
 ---
 
-### 4. Impact on generative quality
+### IV. Impact on generative quality
 
 As we scale optimally, we see:
 
@@ -637,7 +636,7 @@ However:
 
 ---
 
-### 5. Diminishing returns and costs
+### V. Diminishing returns and costs
 
 While scaling improves performance, it comes with **diminishing returns and real-world costs**:
 
@@ -652,7 +651,7 @@ This has led to:
 
 ---
 
-### 6. Practical takeaway for engineers
+### VI. Practical takeaway for engineers
 
 For practitioners building or extending generative AI systems:
 

@@ -1144,6 +1144,15 @@ Building an LLM requires massive computational infrastructure, carefully curated
 | **Feed-Forward Networks (FFN)** | Processes self-attention representations to store factual knowledge and cross-concept mappings. |
 | **Output Projection (Softmax)** | Converts final hidden states back into probability distributions across the full vocabulary to sample the next token. |
 
+# Comparison of Perplexity and Gemini
+| Prompt Category / Dimension | Google Gemini | Perplexity AI | Winner |
+| :--- | :---: | :---: | :---: |
+| **1. Content Creation & Drafting** | **5 / 5** | **3 / 5** | **Gemini** |
+| **2. Real-Time Search & Fact-Checking** | **3.5 / 5** | **5 / 5** | **Perplexity** |
+| **3. Multimodal Analysis & Creation** | **5 / 5** | **3 / 5** | **Gemini** |
+| **4. Source Citations & Transparency** | **3 / 5** | **5 / 5** | **Perplexity** |
+| **5. Workflow & Ecosystem Integration** | **5 / 5** | **3.5 / 5** | **Gemini** |
+
 # Conclusion
 > Generative AI is not a one-size-fits-all engine. Depending on your objective, choosing the right paradigm determines output quality and speed:
 

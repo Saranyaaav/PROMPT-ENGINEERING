@@ -670,16 +670,6 @@ while activating only
 
 ---
 
-## Summary
-
-Modern Generative AI is driven by four major architectural families:
-
-- **Transformers** → Best for language understanding, reasoning, and code generation.
-- **Diffusion Transformers (DiT)** → Best for image and video generation.
-- **Selective State Space Models (Mamba/SSMs)** → Best for long-context processing with linear scalability.
-- **Mixture of Experts (MoE)** → Enables massive models by activating only a subset of parameters during inference.
-
-These architectures power applications across software engineering, healthcare, finance, media, robotics, and enterprise automation, making Generative AI one of the most transformative technologies in modern computing.
 # Perplexity:
 # 4. Generative AI impact of scaling in LLMs
 
@@ -1155,7 +1145,6 @@ Building an LLM requires massive computational infrastructure, carefully curated
 | **Output Projection (Softmax)** | Converts final hidden states back into probability distributions across the full vocabulary to sample the next token. |
 
 # Conclusion
-> ### Generative AI in the Modern Ecosystem
 > Generative AI is not a one-size-fits-all engine. Depending on your objective, choosing the right paradigm determines output quality and speed:
 
 | Tool | Core Strength | Ideal Use Case |

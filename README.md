@@ -348,22 +348,21 @@ To overcome this, **Selective State Space Models (SSMs)** like Mamba have emerge
 
 # Perplexity:
 # 3. Generative AI architecture  and its applications
-## Generative AI Architecture and Its Applications
 
 Generative AI refers to systems that **create new content**—text, code, images, audio, video, or structured data—using deep learning models such as large language models (LLMs), diffusion models, VAEs, and GANs. Modern GenAI solutions are typically built as multi-layer architectures, centered around one or more foundation models and surrounded by data, orchestration, and application layers.[41][45][40]
 
 ---
 
-### 1. Core Architecture Layers
+### I. Core Architecture Layers
 
 A typical *enterprise* generative AI architecture can be viewed in layers:[41][45]
 
-1. **Data Layer**
+I. **Data Layer**
    - Collects, cleans, and prepares structured and unstructured data.
    - Handles ETL, normalization, deduplication, and governance.
    - Provides feature stores and vector databases (for retrieval-augmented generation).
 
-2. **Model Layer**
+II. **Model Layer**
    - Hosts **foundation models**:
      - LLMs for text/code (GPT, LLaMA, Gemini, Claude, etc.).
      - Diffusion/GAN/autoencoder models for images, audio, video.
@@ -371,25 +370,25 @@ A typical *enterprise* generative AI architecture can be viewed in layers:[41][4
      - Fine-tuning, adapters (LoRA), and prompt-tuning.
      - Model hubs for managing multiple models.[45]
 
-3. **Orchestration Layer**
+III. **Orchestration Layer**
    - Manages how applications call models:
      - Prompt engineering, templates, and workflow engines.
      - “Agents” that chain LLM calls, tools, and external APIs.
    - Handles routing, guardrails, and LLMOps (logging, monitoring, evaluation).[41][45]
 
-4. **Application Layer**
+IV. **Application Layer**
    - User-facing interfaces:
      - Chatbots, copilots, design tools, IDE plugins, dashboards.
    - Integrates GenAI capabilities into existing products (CRM, ERP, IDEs, office suites).[41][45][40]
 
-5. **Infrastructure Layer**
+V. **Infrastructure Layer**
    - Cloud platforms and specialized hardware:
      - GPUs, TPUs, accelerators.
    - Container orchestration (Kubernetes), autoscaling, security and observability.
 
 ---
 
-### 2. Generative Model Types
+### II. Generative Model Types
 
 Common generative model families used in this architecture include:
 
@@ -407,30 +406,30 @@ In practice, many systems are **hybrid**, e.g., combining an LLM for planning wi
 
 ---
 
-### 3. Typical GenAI System Flow
+### III. Typical GenAI System Flow
 
 A simplified request flow in a generative AI application:
 
-1. **Input & Preprocessing**
+I. **Input & Preprocessing**
    - User enters a prompt (natural language, code, image, etc.).
    - System performs validation, normalization, and optional retrieval (RAG) from a vector store or document index.
 
-2. **Model Invocation**
+II. **Model Invocation**
    - Orchestration layer chooses a model and prompt template.
    - Foundation model generates candidate outputs (text, image, audio).
 
-3. **Postprocessing & Feedback**
+III. **Postprocessing & Feedback**
    - Apply filters, formatting, and safety checks.
    - Optionally use ranking or feedback signals to refine responses.
    - Log usage for later evaluation and improvement.[41][45]
 
-4. **Delivery**
+IV. **Delivery**
    - Return results through the UI (chat, editor, API).
    - Persist outputs if necessary (documents, tickets, designs).
 
 ---
 
-### 4. Key Generative AI Applications
+### IV. Key Generative AI Applications
 
 Generative AI is being applied widely across industries:[31][37][40][35][43]
 
@@ -468,7 +467,7 @@ Generative AI is being applied widely across industries:[31][37][40][35][43]
 
 ---
 
-### 5. Design Considerations for Engineers
+### V. Design Considerations for Engineers
 
 When designing a generative AI system:
 
@@ -1155,4 +1154,19 @@ Building an LLM requires massive computational infrastructure, carefully curated
 | **Feed-Forward Networks (FFN)** | Processes self-attention representations to store factual knowledge and cross-concept mappings. |
 | **Output Projection (Softmax)** | Converts final hidden states back into probability distributions across the full vocabulary to sample the next token. |
 
+# Conclusion
+> ### Generative AI in the Modern Ecosystem
+> Generative AI is not a one-size-fits-all engine. Depending on your objective, choosing the right paradigm determines output quality and speed:
+
+| Tool | Core Strength | Ideal Use Case |
+| :--- | :--- | :--- |
+| **Gemini** | **Create, Ideate, & Automate** | Drafting long-form content, analyzing multimodal files, and orchestrating multi-step workflows. |
+| **Perplexity** | **Research, Discover, & Verify** | Gathering real-time statistics, validating claims with cited sources, and analyzing current events. |
+
+---
+
+#### The Complete Workflow
+> **Perplexity discovers the facts, and Gemini builds with them.**
+
 # Result
+Generative AI is a content-creation technology powered by deep learning, where models learn from examples and generate realistic new outputs by predicting patterns and probabilities in data.

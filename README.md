@@ -1145,13 +1145,15 @@ Building an LLM requires massive computational infrastructure, carefully curated
 | **Output Projection (Softmax)** | Converts final hidden states back into probability distributions across the full vocabulary to sample the next token. |
 
 # Comparison of Perplexity and Gemini
-| Prompt Category / Dimension | Google Gemini | Perplexity AI | Winner |
-| :--- | :---: | :---: | :---: |
-| **1. Content Creation & Drafting** | **5 / 5** | **3 / 5** | **Gemini** |
-| **2. Real-Time Search & Fact-Checking** | **3.5 / 5** | **5 / 5** | **Perplexity** |
-| **3. Multimodal Analysis & Creation** | **5 / 5** | **3 / 5** | **Gemini** |
-| **4. Source Citations & Transparency** | **3 / 5** | **5 / 5** | **Perplexity** |
-| **5. Workflow & Ecosystem Integration** | **5 / 5** | **3.5 / 5** | **Gemini** |
+### 📊 Comparison of Google Gemini and Perplexity AI
+
+| Criteria | Google Gemini | Perplexity AI |
+| :--- | :--- | :--- |
+| **Accuracy** | **(4.5/5)** – Highly accurate across deep technical analysis, math, coding, and long-form synthesis, though occasional factual drift can occur on obscure live web details. | **(5/5)** – Exceptionally accurate for current events and factual research. Every claim is grounded directly in live web sources with inline citations. |
+| **Creativity** | **(5/5)** – Industry-leading for long-form drafting, creative brainstorming, adaptive tone customization, visual asset generation, and storytelling. | **(3.5/5)** – Focuses primarily on concise, structured factual summaries. Strong for technical outlines, but less suited for open-ended creative writing. |
+| **Hallucination** | **(4.5/5)** – Extremely low in Deep Research and technical reasoning tasks, though ungrounded quick prompts can occasionally lean on internal model memory. | **(5/5)** – Minimal hallucination risk. Answers are constrained by real-time web retrieval (RAG) and backed by direct source links. |
+| **Reasoning** | **(5/5)** – Superior multi-step reasoning, multimodal logic (text, audio, image, video), complex data analysis, and long-context synthesis. | **(4.5/5)** – Strong analytical reasoning for synthesis and comparative research, but limited in processing complex native video/audio inputs. |
+| **Speed** | **(4/5)** – Fast for standard tasks, but deliberately takes longer on complex, multi-step deep reasoning and research agent workflows. | ☆ **(5/5)** – Extremely fast first-answer response times (median ~6–8 seconds) while simultaneously retrieving and parsing live web pages. |
 
 # Conclusion
 > Generative AI is not a one-size-fits-all engine. Depending on your objective, choosing the right paradigm determines output quality and speed:

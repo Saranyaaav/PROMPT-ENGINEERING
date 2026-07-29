@@ -1153,7 +1153,7 @@ Building an LLM requires massive computational infrastructure, carefully curated
 | **Creativity** | **(5/5)** – Industry-leading for long-form drafting, creative brainstorming, adaptive tone customization, visual asset generation, and storytelling. | **(3.5/5)** – Focuses primarily on concise, structured factual summaries. Strong for technical outlines, but less suited for open-ended creative writing. |
 | **Hallucination** | **(4.5/5)** – Extremely low in Deep Research and technical reasoning tasks, though ungrounded quick prompts can occasionally lean on internal model memory. | **(5/5)** – Minimal hallucination risk. Answers are constrained by real-time web retrieval (RAG) and backed by direct source links. |
 | **Reasoning** | **(5/5)** – Superior multi-step reasoning, multimodal logic (text, audio, image, video), complex data analysis, and long-context synthesis. | **(4.5/5)** – Strong analytical reasoning for synthesis and comparative research, but limited in processing complex native video/audio inputs. |
-| **Speed** | **(4/5)** – Fast for standard tasks, but deliberately takes longer on complex, multi-step deep reasoning and research agent workflows. | ☆ **(5/5)** – Extremely fast first-answer response times (median ~6–8 seconds) while simultaneously retrieving and parsing live web pages. |
+| **Speed** | **(4/5)** – Fast for standard tasks, but deliberately takes longer on complex, multi-step deep reasoning and research agent workflows. | **(5/5)** – Extremely fast first-answer response times (median ~6–8 seconds) while simultaneously retrieving and parsing live web pages. |
 
 # Conclusion
 > Generative AI is not a one-size-fits-all engine. Depending on your objective, choosing the right paradigm determines output quality and speed:

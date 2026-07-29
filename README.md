@@ -740,7 +740,7 @@ Tokenization defines the model’s “atoms of language” and strongly affects 
 
 ## Training
 
-### IV. Pretraining (Next-Token Prediction)
+### I. Pretraining (Next-Token Prediction)
 
 **Objective:**
 
@@ -773,7 +773,7 @@ Loss: **cross-entropy** between the predicted distribution and the true next tok
 
 - A **foundation model** that is broadly good at modeling text and code, but not necessarily aligned or instruction-following.
 
-### V. Supervised Fine-Tuning (SFT)
+### II. Supervised Fine-Tuning (SFT)
 
 **Goal:** Make the model follow instructions and behave like a helpful assistant.
 
@@ -788,7 +788,7 @@ This teaches the model behaviors such as:
 - Respecting system/role instructions.
 - Handling multi-turn conversations.
 
-### VI. Alignment (RLHF and Variants)
+### III. Alignment (RLHF and Variants)
 
 **RLHF = Reinforcement Learning with Human Feedback.**
 
@@ -815,7 +815,7 @@ Alignment affects:
 
 ## Evaluation and Deployment
 
-### VII. Evaluation
+### I. Evaluation
 
 Evaluate on:
 
@@ -829,7 +829,7 @@ Metrics can include:
 - BLEU/ROUGE for some generation tasks.
 - Human evaluation of quality and safety.
 
-### VIII. Inference and Serving
+### II. Inference and Serving
 
 At inference time:
 
